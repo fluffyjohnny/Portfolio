@@ -9,8 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(process.env.REACT_APP_PORT, () => console.log("Server Running"));
-console.log(`Listening on port ${process.env.REACT_APP_PORT}`)
+app.listen(8008, () => console.log("Server Running on port 8008"));
 
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
@@ -29,7 +28,11 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+app.get("/", (req, res) => {
+  res.send('<h1>hellow</h1>')
+})
+
+app.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
@@ -50,4 +53,6 @@ router.post("/contact", (req, res) => {
       res.json({ code: 200, status: "Message Sent" });
     }
   });
+
+  console.log('Email Sent')
 });
