@@ -302,18 +302,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 70px 0;
   position: relative;
 }
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 50px 50px;
-  margin-top: -35px;
+  padding: 60px 50px;
+  margin-top: -60px;
 }
 .skill h2 {
 	font-size: 45px;
+  padding-top: 30px;
 	font-weight: 700;
 }
 .skill p {
@@ -324,12 +325,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   position: relative;
 }
 .skill-slider .item img {
-  width: 40%;
+  width: 50%;
   margin: 0 auto 25px auto;
 }
 .background-image-left {
@@ -342,9 +343,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 120px 0;
   position: relative;
-  background-color: black;
+  background-color: rgb(26, 23, 23);
 }
 .project h2 {
 	font-size: 45px;
@@ -412,6 +413,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
+  z-index: 2;
 }
 .proj-imgbx {
   position: relative;
@@ -458,21 +460,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 .background-image-right {
-  top: 20%;
+  top: 10%;
   position: absolute;
   bottom: 0;
   width: 35%;
   right: 0;
-  z-index: -4;
+  z-index: 1;
 }
 
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  border-radius: 20px;
+  padding: 50px 0 200px 0;
 }
 .contact img {
-  width: 92%;
+  width: 92% !important;
 }
 .contact h2 {
 	font-size: 45px;
@@ -604,7 +607,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.5px;
-  border-radius: 18px;
+  border-radius: 19px;
 }
 .footer img {
   width: 26%;
