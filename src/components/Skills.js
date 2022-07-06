@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
@@ -28,12 +28,12 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-      <container>
+      <Container className="container">
         <Row>
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>descript</p>
+              <p>description here</p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -61,9 +61,9 @@ export const Skills = () => {
             </div>
           </Col>
         </Row>
-      </container>
+      </Container>
       <img
-        className="backgrond-img-left"
+        className="background-image-left"
         src={colorSharp}
         alt="skills-background-left"
       />
