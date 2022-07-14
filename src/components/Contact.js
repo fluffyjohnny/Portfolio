@@ -34,8 +34,6 @@ export const Contact = () => {
       body: JSON.stringify(formDetails),
     });
 
-
-
     setButtonText("Send");
     let result = response.json();
     setFormDetails(formInitialDetails);
@@ -97,6 +95,7 @@ export const Contact = () => {
                 <Col sm={12}>
                   <textarea
                     rows="4"
+                    className="contact-text"
                     value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}
