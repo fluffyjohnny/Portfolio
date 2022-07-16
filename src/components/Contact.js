@@ -92,7 +92,7 @@ export const Contact = () => {
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
-                <Col sm={12}>
+                <Col sm={12} className='contact-buttom'>
                   <textarea
                     rows="4"
                     className="contact-text"
