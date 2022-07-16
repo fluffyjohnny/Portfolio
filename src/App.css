@@ -154,6 +154,7 @@ span.navbar-text {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
+  border-radius: 10px;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -170,6 +171,7 @@ span.navbar-text {
   height: 100%;
   position: absolute;
   background-color: #fff;
+  border-radius: 10px;
   left: 0;
   top: 0;
   z-index: -1;
@@ -515,7 +517,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 10px;
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -532,6 +534,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 0;
   height: 100%;
   position: absolute;
+  border-radius: 10px;
   top: 0;
   left: 0;
   z-index: 0;
@@ -539,6 +542,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+.contact-buttom {
+  display: flex;
+  flex-direction: column;
 }
 
 /************ Footer Css ************/
