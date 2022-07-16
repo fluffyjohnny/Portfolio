@@ -302,6 +302,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+.greetings {
+  min-height: 130px;
+}
 
 /************ Skills Css ************/
 .skill {
