@@ -9,13 +9,12 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(150 - Math.random() * 100);
-  const period = 3000;
+  const [delta, setDelta] = useState(210 - Math.random() * 100);
+  const period = 2000;
   const rolesToRotate = [
     "a Web Developer",
     "a Vet Operation Associate",
-    "a Gamer",
-    "a Friend",
+    "a Friend!",
   ];
 
   useEffect(() => {
@@ -47,7 +46,7 @@ export const Banner = () => {
     } else if (isDeleting && updateText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(300);
     }
   };
 
@@ -64,15 +63,23 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
+                  <h1 className='greetings'>
                     {`Hi I'm John, `}
-                    <br/>
+                    <br />
                     <span className="wrap">{text}</span>
                   </h1>
-                  <p>About me...</p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's connect <ArrowRightCircle size={25} />
-                  </button>
+                  <p>
+                    I am a <b>Web Developer</b> transitioned from{" "}
+                    <b>veterinary science</b>. I've always had the passion in
+                    technology and software and due to COVID I decided to take a
+                    leap of faith and make a career change. Eventually I would
+                    like to become a bridge that connects the tech field with
+                    the veterinary field to help pets and pet owners. I
+                    graduated from <b>Lighthouse Labs</b> in May 2022, which I
+                    went through an extensive and fast-paced training for three
+                    months. I recently joined a pharmaceutical startup named
+                    Confocal and is working as a Front-End Developer intern.{" "}
+                  </p>
                 </div>
               )}
             </TrackVisibility>
