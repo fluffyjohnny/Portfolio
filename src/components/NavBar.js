@@ -5,6 +5,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import navIcon4 from "../assets/img/nav-icon4.svg";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -109,7 +110,7 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("connect")}
               >
                 <button className="vvd" onClick={() => console.log("connected :)")}>
-                Let's Connect
+                Let's Connect &nbsp;&nbsp;<ArrowRightCircle size={25} />
             </button>
               </Nav.Link>
           </span>
