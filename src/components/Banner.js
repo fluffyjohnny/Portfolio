@@ -69,12 +69,12 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    I am a <b>Web Developer</b> transitioned from{" "}
-                    <b>veterinary science</b>. I've always had the passion in
-                    technology and software and due to COVID I decided to take a
-                    leap of faith and make a career change. Eventually I would
-                    like to become a bridge that connects the tech field with
-                    the veterinary field to help pets and pet owners. I
+                    I am a <b>Full-Stack Web Developer</b> transitioned from{" "}
+                    <b>Veterinary Science</b>. I've always had the passion in
+                    technology and software and due to COVID19 I decided to take a
+                    leap of faith and make a career change. I would
+                    like to eventually become a bridge that connects the tech field with
+                    the veterinary field to further help pet owners and their pets. I
                     graduated from <b>Lighthouse Labs</b> in May 2022, which I
                     went through an extensive and fast-paced training for three
                     months. I recently joined a pharmaceutical startup named
