@@ -56,7 +56,7 @@ export const Skills = () => {
                 infinite={true}
                 className="skill-slider"
                 autoPlay
-                autoPlaySpeed={4000}
+                autoPlaySpeed={3000}
               >
                 <div className="item">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" />
