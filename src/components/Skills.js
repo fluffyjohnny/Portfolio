@@ -87,6 +87,10 @@ export const Skills = () => {
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS" />
+                  <h5>SASS</h5>
+                </div>
+                <div className="item">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" />
                   <h5>TailwindCSS</h5>
                 </div>
