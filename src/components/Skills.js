@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Col, Row, Container } from "react-bootstrap";
 import colorSharp from "../assets/img/color-sharp.png";
+import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
   const responsive = {
@@ -28,12 +29,28 @@ export const Skills = () => {
       <Container className="container">
         <Row>
           <Col>
+
+
+          
+
+
+
             <div className="skill-bx">
               <br />
-              <h2>Skills</h2>
+              <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__headShake" : ""
+                  }
+                >
+                  <h2>Skills</h2>
               <p>
                 Languages, Frameworks, Libraries, and Databases
               </p>
+                </div>
+              )}
+            </TrackVisibility>
               <Carousel
                 responsive={responsive}
                 infinite={true}
