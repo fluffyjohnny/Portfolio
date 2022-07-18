@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/header-img.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -63,7 +63,7 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1 className='greetings'>
+                  <h1 className="greetings">
                     {`Hi I'm John, `}
                     <br />
                     <span className="wrap">{text}</span>
@@ -71,15 +71,17 @@ export const Banner = () => {
                   <p>
                     I am a <b>Full-Stack Web Developer</b> transitioned from{" "}
                     <b>Veterinary Science</b>. I've always had the passion in
-                    technology and software and due to COVID19 I decided to take a
-                    leap of faith and make a career change. I would
-                    like to eventually become a bridge that connects the tech field with
-                    the veterinary field to further help pet owners and their pets. I
-                    graduated from <b>Lighthouse Labs</b> in May 2022, which I
-                    went through an extensive and fast-paced training for three
-                    months. I recently joined a pharmaceutical startup named
-                    Confocal and is working as a Front-End Developer intern.{" "}
+                    technology and software and due to COVID19 I decided to take
+                    a leap of faith and make a career change. I would like to
+                    eventually become a bridge that connects the tech field with
+                    the veterinary field to further help pet owners and their
+                    pets. I graduated from <b>Lighthouse Labs</b> in May 2022,
+                    which I went through an extensive and fast-paced training
+                    for three months. I recently joined a pharmaceutical startup
+                    named Confocal and is working as a Front-End Developer
+                    intern.{" "}
                   </p>
+                  <div id="skills" />
                 </div>
               )}
             </TrackVisibility>
