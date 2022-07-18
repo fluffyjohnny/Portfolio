@@ -247,7 +247,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 180px 0 100px 0;
   background-image: url("./assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
@@ -292,27 +292,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.banner button:hover svg {
-  margin-left: 25px;
-}
 .banner img {
-  animation: updown 3s linear infinite;
+  animation: updown 5s ease infinite;
+  padding-left: 40px;
 }
 @keyframes updown {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(-60px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(-50px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-60px);
   }
 }
 .txt-rotate > .wrap {
@@ -446,6 +438,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  min-height: 200px;
+  max-height: 200px;
+  z-index: 5;
+}
+.proj-imgbx a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s
+}
+.proj-imgbx a:hover{
+  color: #b3ffaf;
 }
 .proj-imgbx::before {
   content: "";
@@ -468,6 +471,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  padding: 0 20px;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
