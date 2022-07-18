@@ -25,18 +25,11 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill">
       <Container className="container">
         <Row>
           <Col>
-
-
-          
-
-
-
             <div className="skill-bx">
-              <br />
               <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -101,6 +94,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React.JS" />
                   <h5>React.JS</h5>
+                </div>
+                <div className="item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" alt="Next.JS" />
+                  <h5>Next.JS</h5>
                 </div>
                 <div className="item">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express" />
