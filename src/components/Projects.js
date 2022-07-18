@@ -154,6 +154,7 @@ export const Projects = () => {
                     or for fun!
                     <br /> Created by myself or with teammates
                   </p>
+                  <br />
                   <Row>
                     {projects2.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
