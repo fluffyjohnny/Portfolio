@@ -402,6 +402,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+  min-height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project .nav.nav-pills .nav-link::before {
   content: "";
@@ -658,4 +662,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .proj-imgbx {
+    width: 85%;
+    margin-left: 43px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .newsletter-bx {
+    padding: 50px 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .newsletter-bx {
+    padding: 70px 80px;
+  }
+  
+}
+
+@media only screen and (max-width: 1199px) {
+  .new-email-bx {
+    margin-top: 20px;
+  }
+  .new-email-bx button {
+    width: 150px;
+    font-size: 15px;
+    padding: 0;
+    height: 60px;
+  }
 }
